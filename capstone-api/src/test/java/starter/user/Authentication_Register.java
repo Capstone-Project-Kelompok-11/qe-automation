@@ -22,10 +22,10 @@ public class Authentication_Register {
     @Step("user send create account with valid data")
     public void userSendCreateAccountWithValidData() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("name", "testqaregisterr");
-        requestBody.put("username", "testqaregisterr");
-        requestBody.put("email", "testqaregister@gmail.comm");
-        requestBody.put("password", "Testing123!@@#1121");
+        requestBody.put("name", "testforqa12345");
+        requestBody.put("username", "testforqa12345");
+        requestBody.put("email", "testforqa12345@mail.co");
+        requestBody.put("password", "User@1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(userSetEndpointForRegister());
     }
