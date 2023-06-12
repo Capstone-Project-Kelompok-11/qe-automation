@@ -121,6 +121,16 @@ public class UserSteps {
         get.loginAsAdminToGetToken();
     }
 
+    @And("login as user to get token")
+    public void loginAsUserToGetToken() {
+        get.loginAsUserToGetToken();
+    }
+
+    @When("user send GET HTTP request using normal token")
+    public void userSendGETHTTPRequestUsingNormalToken() {
+        get.userSendGETHTTPRequestUsingNormalToken();
+    }
+
     @When("user send GET HTTP request")
     public void userSendGETHTTPRequest() {
         get.userSendGETHTTPRequest();
@@ -179,15 +189,5 @@ public class UserSteps {
     @Then("error status code {int}")
     public void errorStatusCode(int arg0) {
         manageCustomersWhoEnrolled.errorStatusCode(401);
-    }
-
-    @And("login as user to get token")
-    public void loginAsUserToGetToken() {
-        get.loginAsUserToGetToken();
-    }
-
-    @When("user send GET HTTP request using normal token")
-    public void userSendGETHTTPRequestUsingNormalToken() {
-        get.userSendGETHTTPRequestUsingNormalToken();
     }
 }
