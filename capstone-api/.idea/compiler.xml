@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="capstone-api1" />
+        <module name="capstone-api" />
       </profile>
     </annotationProcessing>
   </component>
