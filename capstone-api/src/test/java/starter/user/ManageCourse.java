@@ -1,6 +1,7 @@
 package starter.user;
 
 import io.cucumber.java.en.And;
+
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import net.serenitybdd.rest.SerenityRest;
@@ -14,6 +15,7 @@ public class ManageCourse {
 
     protected static String url = "https://skfw.net/api/v1/";
     protected static String tokenAdmin = "";
+
 
 
     @Step("user set endpoint for get course")
@@ -48,5 +50,24 @@ public class ManageCourse {
     @Step("get all course show up")
     public void getAllCourseShowUp() {
         restAssuredThat(response -> response.body("$", hasKey("data")));
+    }
+
+    @Step("login as user to get token")
+    public void loginAsUserToGetToken() {
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("username", "testforqa");
+        requestBody.put("email", "testforqa@mail.co");
+        requestBody.put("password", "User@1234");
+
+        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(url + "users/login");
+        Response resp = SerenityRest.lastResponse();
+
+        JsonPath jsonPath = resp.getBody().jsonPath();
+        tokenUser = jsonPath.get("data.token");
+    }
+
+    @Step("user send GET HTTP request using normal token")
+    public void userSendGETHTTPRequestUsingNormalToken() {
+        SerenityRest.given().header("Authorization", "Bearer "+tokenUser).get(userSetEndpointForGetCourse());
     }
 }
