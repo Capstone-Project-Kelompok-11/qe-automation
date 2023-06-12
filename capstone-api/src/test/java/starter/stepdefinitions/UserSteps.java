@@ -180,4 +180,14 @@ public class UserSteps {
     public void errorStatusCode(int arg0) {
         manageCustomersWhoEnrolled.errorStatusCode(401);
     }
+
+    @And("login as user to get token")
+    public void loginAsUserToGetToken() {
+        get.loginAsUserToGetToken();
+    }
+
+    @When("user send GET HTTP request using normal token")
+    public void userSendGETHTTPRequestUsingNormalToken() {
+        get.userSendGETHTTPRequestUsingNormalToken();
+    }
 }
