@@ -1,6 +1,7 @@
 package starter.user;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.When;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import net.serenitybdd.rest.SerenityRest;
@@ -67,6 +68,6 @@ public class ManageCourse {
 
     @Step("user send GET HTTP request using normal token")
     public void userSendGETHTTPRequestUsingNormalToken() {
-        SerenityRest.given().header("Authorization", "Bearer " + tokenUser).get(userSetEndpointForGetCourse());
+        SerenityRest.given().header("Authorization", "Bearer "+tokenUser).get(userSetEndpointForGetCourse());
     }
 }

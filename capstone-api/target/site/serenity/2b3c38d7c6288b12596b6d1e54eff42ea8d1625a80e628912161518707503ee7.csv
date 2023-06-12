@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"As admin I want to see all course","GET - As a user I want to see all course","SUCCESS","2023-06-12T10:50:44.9326869+07:00[Asia/Bangkok]","0.0","0.25"
+"As admin I want to see all course","GET - As a admin I want to see all course using normal user","SUCCESS","2023-06-12T10:47:48.8237603+07:00[Asia/Jakarta]","0.0","0.35"
