@@ -121,16 +121,6 @@ public class UserSteps {
         get.loginAsAdminToGetToken();
     }
 
-    @And("login as user to get token")
-    public void loginAsUserToGetToken() {
-        get.loginAsUserToGetToken();
-    }
-
-    @When("user send GET HTTP request using normal token")
-    public void userSendGETHTTPRequestUsingNormalToken() {
-        get.userSendGETHTTPRequestUsingNormalToken();
-    }
-
     @When("user send GET HTTP request")
     public void userSendGETHTTPRequest() {
         get.userSendGETHTTPRequest();

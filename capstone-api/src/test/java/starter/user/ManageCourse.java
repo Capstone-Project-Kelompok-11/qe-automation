@@ -1,7 +1,7 @@
 package starter.user;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.When;
+
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import net.serenitybdd.rest.SerenityRest;
@@ -15,7 +15,7 @@ public class ManageCourse {
 
     protected static String url = "https://skfw.net/api/v1/";
     protected static String tokenAdmin = "";
-    protected static String tokenUser = "";
+
 
 
     @Step("user set endpoint for get course")
