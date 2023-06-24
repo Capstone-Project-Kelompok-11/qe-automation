@@ -42,9 +42,19 @@ public class ManageCourse {
         SerenityRest.given().header("Authorization", "Bearer "+tokenAdmin).get(userSetEndpointForGetCourse());
     }
 
+    @Step("user send POST HTTP request")
+    public void userSendPostHTTPRequest() {
+        SerenityRest.given().header("Authorization", "Bearer "+tokenAdmin).post(userSetEndpointForGetCourse());
+    }
+
     @Step("user see status code 200")
     public void userSeeStatusCode200() {
         restAssuredThat(response -> response.statusCode(200));
+    }
+
+    @Step("user see status code 201 for create course")
+    public void userSeeStatusCode201ForCreateCourse() {
+        restAssuredThat(response -> response.statusCode(201));
     }
 
     @Step("get all course show up")
@@ -70,4 +80,21 @@ public class ManageCourse {
     public void userSendGETHTTPRequestUsingNormalToken() {
         SerenityRest.given().header("Authorization", "Bearer "+tokenUser).get(userSetEndpointForGetCourse());
     }
+
+    @Step("user set endpoint for get specific course {0}")
+    public String userSetEndpointForGetSpecificCourse(String id) {
+        return url + "/admin/course?id="+id;
+    }
+
+
+    @Step("user successful get who courses enrolled")
+    public String userSuccessGetWhoCourseEnrolled() {
+        return url + "admin/who/courses/enrolled?size=10&page=1";
+    }
+
+    @Step("user successful get course resumes")
+    public String userSuccessGetCourseResumes() {
+        return url + "admin/course/resumes?size=10&page=1";
+    }
+
 }

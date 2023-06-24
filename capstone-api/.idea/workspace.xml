@@ -4,7 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3797d07-aa30-4eb8-aca3-ce5f1e99a1e6" name="Changes" comment="" />
+    <list default="true" id="c3797d07-aa30-4eb8-aca3-ce5f1e99a1e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/UserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/UserSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/user/Authentication_Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/user/Authentication_Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/user/ManageCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/user/ManageCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/capstone-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/capstone-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-starter.CucumberTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/TEST-starter.CucumberTestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/starter.CucumberTestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/starter.CucumberTestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/050ec6da7ca8752a9dd238624b549fa695a5de7f2507cf4b79bc518a31f67ddb.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/050ec6da7ca8752a9dd238624b549fa695a5de7f2507cf4b79bc518a31f67ddb.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/098b58b274b89f2da4cadcdff44b525224aba865379d301cfede4d5662ad577b.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/098b58b274b89f2da4cadcdff44b525224aba865379d301cfede4d5662ad577b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0e539eea45b8a1fda9e817c82d71eb238fd7a54efda6fd493f5b93950f34ef05.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0e539eea45b8a1fda9e817c82d71eb238fd7a54efda6fd493f5b93950f34ef05.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/0f8c379d7f15288e9505d6bda335f4ff861a44e57982ab9e5d3551e4b453f19c.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/0f8c379d7f15288e9505d6bda335f4ff861a44e57982ab9e5d3551e4b453f19c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/102b87966acd9d839cefd5048ff59ab0d7139af6a3b8dc8710e7c9c222d669b8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2ac51e554d789d6a89a2d887cc7d470fdfe247e6d13b3d925a58a3699b7d2a17.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2ac51e554d789d6a89a2d887cc7d470fdfe247e6d13b3d925a58a3699b7d2a17.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2b3c38d7c6288b12596b6d1e54eff42ea8d1625a80e628912161518707503ee7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2b3c38d7c6288b12596b6d1e54eff42ea8d1625a80e628912161518707503ee7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2e03a8900cab42e5b3781c7eb2f1daff441f10335203aacedf4be3d554285154.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2e03a8900cab42e5b3781c7eb2f1daff441f10335203aacedf4be3d554285154.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/365b16e3ee6f0291b840b9644231fff9e30b16504a367cdf3c6abe85187cb1e6.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/365b16e3ee6f0291b840b9644231fff9e30b16504a367cdf3c6abe85187cb1e6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/3a10ad2b1b7298b3d25fb192bae0c7dd94493a1dfb7f7b36a3f97e0c0f4007b7.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/3a10ad2b1b7298b3d25fb192bae0c7dd94493a1dfb7f7b36a3f97e0c0f4007b7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/3a59e1eeefcffaaf1d4ca5a2565a909b2abb02a13aa029d261563a108481c786.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/46e793935ca3b65d86ea0310260588ae93cebd23efcb9bc98603915efa98f8ac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/46e793935ca3b65d86ea0310260588ae93cebd23efcb9bc98603915efa98f8ac.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/492568a1ef976a9b746e6b09d6d98453500775c808b735c8167a8cf83fd28d46.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/492568a1ef976a9b746e6b09d6d98453500775c808b735c8167a8cf83fd28d46.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/583057434dc73a61f47be6c9c7b59a45a045182ad95e5c92de3108766995ca1f.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/583057434dc73a61f47be6c9c7b59a45a045182ad95e5c92de3108766995ca1f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/585169aadc0df9bccda5351a31328de5957e2d5a71a405e9aee6a036d163ac3f.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/585169aadc0df9bccda5351a31328de5957e2d5a71a405e9aee6a036d163ac3f.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5a006f88771669272df6ab4baff14eabf2d30b9c821a7f3aa6bb3f10cfd5c027.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/5a006f88771669272df6ab4baff14eabf2d30b9c821a7f3aa6bb3f10cfd5c027.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5a006f88771669272df6ab4baff14eabf2d30b9c821a7f3aa6bb3f10cfd5c027.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/5a006f88771669272df6ab4baff14eabf2d30b9c821a7f3aa6bb3f10cfd5c027.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5a05e448920d9ea6789f1c2d5d982a9bd65ccb1eed43193bb6a4c356244e6ac5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/5a05e448920d9ea6789f1c2d5d982a9bd65ccb1eed43193bb6a4c356244e6ac5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/63cf08f294806ddf8c52144e9bbcaa7a0ca3647b40ea892216a4f9757f46fcc5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/63cf08f294806ddf8c52144e9bbcaa7a0ca3647b40ea892216a4f9757f46fcc5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/7366c85851187c17a2b306ddcb572f123c034f711f6f1a31e85437d27fcb0cf1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/7366c85851187c17a2b306ddcb572f123c034f711f6f1a31e85437d27fcb0cf1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/7452214b4174ee1129fd830d60bbdf817a63b4b2eb53b75e4ebd16d4d9bf1e37.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/7ca3aac86b4a3785e624e0f6a1b14d1c5eaea8bfc79afaab5491caf9e43beaf2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/7ca3aac86b4a3785e624e0f6a1b14d1c5eaea8bfc79afaab5491caf9e43beaf2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/7f2596e2138aa09506ec7a7e8c9239b1d10020a53ec3381270988911df03b935.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/85d9c3476fcaff5ef7b29b6de03364119d868227944990dcec4b5d5149e8599b.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/85d9c3476fcaff5ef7b29b6de03364119d868227944990dcec4b5d5149e8599b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/8a5932f234a3c8a76a90354e6bc706cd4b6a929e53877f071ee09414ee4aa363.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/8a5932f234a3c8a76a90354e6bc706cd4b6a929e53877f071ee09414ee4aa363.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/95cb6f5a767c9ebb398c0e8bb165028008e705defff1e55714c798b78e6daa6e.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/95cb6f5a767c9ebb398c0e8bb165028008e705defff1e55714c798b78e6daa6e.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/9725426f8c31703c16d9125964b724d9d3072e622158bb1ce70d4f8fa32341bf.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/9725426f8c31703c16d9125964b724d9d3072e622158bb1ce70d4f8fa32341bf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/99e455e88b81ab5942d307f9312de223107b3f9ce2a5c38b456f60ec854a6496.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/99e455e88b81ab5942d307f9312de223107b3f9ce2a5c38b456f60ec854a6496.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-5a006f88771669272df6ab4baff14eabf2d30b9c821a7f3aa6bb3f10cfd5c027.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-5a006f88771669272df6ab4baff14eabf2d30b9c821a7f3aa6bb3f10cfd5c027.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b9e3573613a81537e5baf00f35123fd80973675b8511c46f2f9a401619be6079.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b9e3573613a81537e5baf00f35123fd80973675b8511c46f2f9a401619be6079.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/build-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/build-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/capabilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/capabilities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/cf36751fcb0a1a8475c1b364f7f42c8789044c907669740d23c9394525bad14a.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/cf36751fcb0a1a8475c1b364f7f42c8789044c907669740d23c9394525bad14a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/d40ce2cc1d8730ea5250bec3bee28b781f764f472b46d918fb0280283d85491a.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d40ce2cc1d8730ea5250bec3bee28b781f764f472b46d918fb0280283d85491a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/e493309d0031091ae9bf9b0514e9bd2a4ec8a30b51666202759471906f7af061.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/e493309d0031091ae9bf9b0514e9bd2a4ec8a30b51666202759471906f7af061.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ec6ab2b18c6664eeb785c3199c05092ad6b5eae916acc6932eb4acc5e6497ed8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ec6ab2b18c6664eeb785c3199c05092ad6b5eae916acc6932eb4acc5e6497ed8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ec6ab2b18c6664eeb785c3199c05092ad6b5eae916acc6932eb4acc5e6497ed8.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ec6ab2b18c6664eeb785c3199c05092ad6b5eae916acc6932eb4acc5e6497ed8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/fe5b4eb76204e81302e76a45ca9be95a42f431ebbc8b69359ec07d130ab0e186.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/fe5b4eb76204e81302e76a45ca9be95a42f431ebbc8b69359ec07d130ab0e186.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/summary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/managecourse.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/managecourse.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/starter/stepdefinitions/UserSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/starter/stepdefinitions/UserSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/starter/user/ManageCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/starter/user/ManageCourse.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,17 +82,130 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2QHJH0ZUUqm3lHlmbmsszpk0zEk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/capstone-api"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: GET - As a admin I want to successful get course resumes">
+    <configuration name="Scenario: GET - As a admin I want to see all course" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors starter.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="capstone-api" />
+      <option name="NAME_FILTER" value="^GET \- As a admin I want to see all course$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET \- As a admin I want to see all course$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET - As a admin I want to see all course" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GET - As a admin I want to see specific course" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors starter.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="capstone-api" />
+      <option name="NAME_FILTER" value="^GET \- As a admin I want to see specific course$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET \- As a admin I want to see specific course$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET - As a admin I want to see specific course" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GET - As a admin I want to successful get course resumes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors starter.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="capstone-api" />
+      <option name="NAME_FILTER" value="^GET \- As a admin I want to successful get course resumes$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET \- As a admin I want to successful get course resumes$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET - As a admin I want to successful get course resumes" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: GET - As a admin I want to successful get who courses enrolled" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors starter.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="capstone-api" />
+      <option name="NAME_FILTER" value="^GET \- As a admin I want to successful get who courses enrolled$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^GET \- As a admin I want to successful get who courses enrolled$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: GET - As a admin I want to successful get who courses enrolled" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: POST - As a admin I want to create course" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/managecourse.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors starter.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="capstone-api" />
+      <option name="NAME_FILTER" value="^POST \- As a admin I want to create course$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^POST \- As a admin I want to create course$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: POST - As a admin I want to create course" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: GET - As a admin I want to successful get course resumes" />
+        <item itemvalue="Cucumber Java.Scenario: POST - As a admin I want to create course" />
+        <item itemvalue="Cucumber Java.Scenario: GET - As a admin I want to successful get who courses enrolled" />
+        <item itemvalue="Cucumber Java.Scenario: GET - As a admin I want to see specific course" />
+        <item itemvalue="Cucumber Java.Scenario: GET - As a admin I want to see all course" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

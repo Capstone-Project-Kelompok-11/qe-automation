@@ -1,6 +1,6 @@
-C:\Users\Admin\IdeaProjects\capstone-api\src\test\java\starter\user\Authentication_Register.java
-C:\Users\Admin\IdeaProjects\capstone-api\src\test\java\starter\user\Authentication_Login.java
-C:\Users\Admin\IdeaProjects\capstone-api\src\test\java\starter\CucumberTestSuite.java
-C:\Users\Admin\IdeaProjects\capstone-api\src\test\java\starter\user\ManageCustomersWhoEnrolled.java
-C:\Users\Admin\IdeaProjects\capstone-api\src\test\java\starter\stepdefinitions\UserSteps.java
-C:\Users\Admin\IdeaProjects\capstone-api\src\test\java\starter\user\ManageCourse.java
+D:\GITHUB\qe-automation\capstone-api\src\test\java\starter\stepdefinitions\UserSteps.java
+D:\GITHUB\qe-automation\capstone-api\src\test\java\starter\user\ManageCourse.java
+D:\GITHUB\qe-automation\capstone-api\src\test\java\starter\user\Authentication_Login.java
+D:\GITHUB\qe-automation\capstone-api\src\test\java\starter\CucumberTestSuite.java
+D:\GITHUB\qe-automation\capstone-api\src\test\java\starter\user\ManageCustomersWhoEnrolled.java
+D:\GITHUB\qe-automation\capstone-api\src\test\java\starter\user\Authentication_Register.java

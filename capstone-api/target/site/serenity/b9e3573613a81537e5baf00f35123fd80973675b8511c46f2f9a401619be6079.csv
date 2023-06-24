@@ -1,3 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"As admin I want to see all course","GET - As a admin I want to see all course","SUCCESS","2023-06-12T10:47:45.3751259+07:00[Asia/Jakarta]","0.0","3.41"
-"As admin I want to see all course","GET - As a admin I want to see all course using normal user","SUCCESS","2023-06-12T10:47:48.8237603+07:00[Asia/Jakarta]","0.0","0.35"
+"As admin I want to see all course","GET - As a admin I want to see all course","SUCCESS","2023-06-24T14:23:16.5684906+07:00[Asia/Bangkok]","0.0","0.28"
+"As admin I want to see all course","GET - As a admin I want to see all course using normal user","SUCCESS","2023-06-24T14:23:16.8573571+07:00[Asia/Bangkok]","0.0","0.23"
+"As admin I want to see all course","GET - As a admin I want to see specific course","SUCCESS","2023-06-24T14:23:17.0920415+07:00[Asia/Bangkok]","0.0","0.26"
+"As admin I want to see all course","GET - As a admin I want to successful get who courses enrolled","SUCCESS","2023-06-24T14:23:17.3544934+07:00[Asia/Bangkok]","0.0","0.25"
+"As admin I want to see all course","GET - As a admin I want to successful get course resumes","SUCCESS","2023-06-24T14:23:17.6083777+07:00[Asia/Bangkok]","0.0","0.24"

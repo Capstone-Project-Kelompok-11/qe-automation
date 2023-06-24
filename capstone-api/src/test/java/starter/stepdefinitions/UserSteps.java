@@ -4,8 +4,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 import starter.user.*;
+
+import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class UserSteps {
 
@@ -17,6 +20,7 @@ public class UserSteps {
 
     @Steps
     ManageCourse get;
+
 
     @Steps
     ManageCustomersWhoEnrolled manageCustomersWhoEnrolled;
@@ -136,9 +140,19 @@ public class UserSteps {
         get.userSendGETHTTPRequest();
     }
 
+    @When("user send POST HTTP request")
+    public void userSendPostHTTPRequest() {
+        get.userSendPostHTTPRequest();
+    }
+
     @Then("user see status code 200")
     public void userSeeStatusCode200() {
         get.userSeeStatusCode200();
+    }
+
+    @Then("user see status code 201 for create course")
+    public void userSeeStatusCode201ForCreateCourse() {
+        get.userSeeStatusCode201ForCreateCourse();
     }
 
     @And("get all course show up")
@@ -190,4 +204,23 @@ public class UserSteps {
     public void errorStatusCode(int arg0) {
         manageCustomersWhoEnrolled.errorStatusCode(401);
     }
+
+
+    @Given("user set endpoint for get specific course {string}")
+    public void userSetEndpointForGetSpecificCourse(String arg0) {
+        get.userSetEndpointForGetSpecificCourse(arg0);
+    }
+
+
+
+    @Given("user successful get who courses enrolled")
+    public void userSuccessGetWhoCourseEnrolled() {
+        get.userSuccessGetWhoCourseEnrolled();
+    }
+
+    @Given("user successful get course resumes")
+    public void userSuccessGetCourseResumes() {
+        get.userSuccessGetCourseResumes();
+    }
+
 }
