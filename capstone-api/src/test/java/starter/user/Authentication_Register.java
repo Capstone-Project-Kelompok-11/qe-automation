@@ -23,8 +23,8 @@ public class Authentication_Register {
     public void userSendCreateAccountWithValidData() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("name", "testforqa12345");
-        requestBody.put("username", "2testforqa12345");
-        requestBody.put("email", "2testforqa12345@mail.co");
+        requestBody.put("username", "3testforqa12345");
+        requestBody.put("email", "3testforqa12345@mail.co");
         requestBody.put("password", "User@1234");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(userSetEndpointForRegister());

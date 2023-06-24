@@ -125,9 +125,19 @@ public class UserSteps {
         get.loginAsAdminToGetToken();
     }
 
+    @And("login as user to get token")
+    public void loginAsUserToGetToken() {
+        get.loginAsUserToGetToken();
+    }
+
     @When("user send GET HTTP request")
     public void userSendGETHTTPRequest() {
         get.userSendGETHTTPRequest();
+    }
+
+    @When("user send GET HTTP request using normal token")
+    public void userSendGETHTTPRequestUsingNormalToken() {
+        get.userSendGETHTTPRequestUsingNormalToken();
     }
 
     @When("user send POST HTTP request")
@@ -200,8 +210,6 @@ public class UserSteps {
     public void userSetEndpointForGetSpecificCourse(String arg0) {
         get.userSetEndpointForGetSpecificCourse(arg0);
     }
-
-
 
     @Given("user successful get who courses enrolled")
     public void userSuccessGetWhoCourseEnrolled() {

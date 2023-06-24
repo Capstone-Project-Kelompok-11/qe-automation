@@ -15,6 +15,7 @@ public class ManageCourse {
 
     protected static String url = "https://skfw.net/api/v1/";
     protected static String tokenAdmin = "";
+    protected static String tokenUser = "";
 
 
 
