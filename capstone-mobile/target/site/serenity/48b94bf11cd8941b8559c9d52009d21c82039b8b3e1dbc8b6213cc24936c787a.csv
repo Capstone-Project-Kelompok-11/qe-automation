@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As an User, I want to success login, So that i can see my home page","As an user, i want to login with email or password","SUCCESS","2023-06-24T13:06:25.9778788+07:00[Asia/Jakarta]","0.0","23.51"
+"As an User, I want to success login, So that i can see my home page","As an User, I want to view a course so that im able to take a course","SUCCESS","2023-06-24T13:06:49.5000024+07:00[Asia/Jakarta]","0.0","20.68"
+"As an User, I want to success login, So that i can see my home page","As an User, I want to take a quiz in the course","SUCCESS","2023-06-24T13:07:10.1919779+07:00[Asia/Jakarta]","0.0","15.64"
+"As an User, I want to success login, So that i can see my home page","As an User, I want to view my complete course history","SUCCESS","2023-06-24T13:07:25.8391609+07:00[Asia/Jakarta]","0.0","16.73"
+"As an User, I want to success login, So that i can see my home page","As an User, I want to submit rating for the course","SUCCESS","2023-06-24T13:07:42.5813987+07:00[Asia/Jakarta]","0.0","21.45"
+"As an User, I want to success login, So that i can see my home page","As an User, I want to download my certificate after complete course","SUCCESS","2023-06-24T13:08:04.0417184+07:00[Asia/Jakarta]","0.0","21.81"

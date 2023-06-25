@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CucumberTestSuite" time="158.976" tests="43" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Admin\IdeaProjects\capstone-mobile"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Admin\IdeaProjects\capstone-mobile"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="stderr.encoding" value="cp437"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.9.1\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="stdout.encoding" value="cp437"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.1\bin;C:\Program Files\Java\jdk-19\bin;C:\Program Files\nodejs\;C:\platform-tools;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\Documents\xray_windows_amd64.exe;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\GitHubDesktop\bin;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Roaming\npm;C:\Users\Admin\AppData\Roaming\Composer\vendor\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.9.1/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="63.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.9.1\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="19"/>
+    <property name="user.name" value="Admin"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.9.1\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.9.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="user click signup page" classname="As an user, I want to register using the correct data" time="16.658"/>
+  <testcase name="user input &quot;tessts&quot; on fullname field" classname="As an user, I want to register using the correct data" time="3.844"/>
+  <testcase name="user input &quot;tesstss122121&quot; on username field" classname="As an user, I want to register using the correct data" time="1.778"/>
+  <testcase name="user input &quot;tesstss13232121@mail.co&quot; on email signup field" classname="As an user, I want to register using the correct data" time="1.763"/>
+  <testcase name="user input &quot;User@1234&quot; on password signup field" classname="As an user, I want to register using the correct data" time="2.996"/>
+  <testcase name="user input &quot;User@1234&quot; on confirmpassword field" classname="As an user, I want to register using the correct data" time="3.725"/>
+  <testcase name="user click sign up button" classname="As an user, I want to register using the correct data" time="3.091"/>
+  <testcase name="As an user, I want to register using the correct data" classname="As an user, I want to register using the correct data" time="3.105"/>
+  <testcase name="user on the home page" classname="As an user, i want to login with email or password" time="13.353"/>
+  <testcase name="user click next button" classname="As an user, i want to login with email or password" time="2.194"/>
+  <testcase name="user click login page" classname="As an user, i want to login with email or password" time="1.052"/>
+  <testcase name="user input &quot;rizkias1@gmail.com&quot; on email field" classname="As an user, i want to login with email or password" time="3.272"/>
+  <testcase name="user input &quot;Rizki@123&quot; on password field" classname="As an user, i want to login with email or password" time="0.941"/>
+  <testcase name="user click sign in button" classname="As an user, i want to login with email or password" time="2.666"/>
+  <testcase name="As an user, i want to login with email or password" classname="As an user, i want to login with email or password" time="2.719"/>
+  <testcase name="user click view all in popular course" classname="As an User, I want to view a course so that im able to take a course" time="14.488"/>
+  <testcase name="user click category All" classname="As an User, I want to view a course so that im able to take a course" time="0.957"/>
+  <testcase name="user see all the course that want to take" classname="As an User, I want to view a course so that im able to take a course" time="5.159"/>
+  <testcase name="As an User, I want to view a course so that im able to take a course" classname="As an User, I want to view a course so that im able to take a course" time="5.181"/>
+  <testcase name="user click my course button" classname="As an User, I want to take a quiz in the course" time="12.905"/>
+  <testcase name="user click any course" classname="As an User, I want to take a quiz in the course" time="1.256"/>
+  <testcase name="user click Take a Quiz" classname="As an User, I want to take a quiz in the course" time="0.658"/>
+  <testcase name="user see all the quiz" classname="As an User, I want to take a quiz in the course" time="0.789"/>
+  <testcase name="As an User, I want to take a quiz in the course" classname="As an User, I want to take a quiz in the course" time="0.792"/>
+  <testcase name="user click my course button" classname="As an User, I want to view my complete course history" time="14.334"/>
+  <testcase name="user click complete section" classname="As an User, I want to view my complete course history" time="1.447"/>
+  <testcase name="user can see all the complete history" classname="As an User, I want to view my complete course history" time="0.95"/>
+  <testcase name="As an User, I want to view my complete course history" classname="As an User, I want to view my complete course history" time="0.974"/>
+  <testcase name="user click my course button" classname="As an User, I want to submit rating for the course" time="13.97"/>
+  <testcase name="user click complete section" classname="As an User, I want to submit rating for the course" time="1.578"/>
+  <testcase name="user click get certificate" classname="As an User, I want to submit rating for the course" time="2.145"/>
+  <testcase name="user give 5 star" classname="As an User, I want to submit rating for the course" time="1.402"/>
+  <testcase name="user input &quot;good&quot; on review field" classname="As an User, I want to submit rating for the course" time="1.758"/>
+  <testcase name="user click on submit button" classname="As an User, I want to submit rating for the course" time="0.561"/>
+  <testcase name="As an User, I want to submit rating for the course" classname="As an User, I want to submit rating for the course" time="0.671"/>
+  <testcase name="user click my course button" classname="As an User, I want to download my certificate after complete course" time="14.427"/>
+  <testcase name="user click complete section" classname="As an User, I want to download my certificate after complete course" time="1.407"/>
+  <testcase name="user click get certificate" classname="As an User, I want to download my certificate after complete course" time="2.143"/>
+  <testcase name="user give 5 star" classname="As an User, I want to download my certificate after complete course" time="0.935"/>
+  <testcase name="user input &quot;nice&quot; on review field" classname="As an User, I want to download my certificate after complete course" time="1.435"/>
+  <testcase name="user click on submit button" classname="As an User, I want to download my certificate after complete course" time="0.643"/>
+  <testcase name="user click on download button" classname="As an User, I want to download my certificate after complete course" time="0.703"/>
+  <testcase name="As an User, I want to download my certificate after complete course" classname="As an User, I want to download my certificate after complete course" time="0.704"/>
+</testsuite>

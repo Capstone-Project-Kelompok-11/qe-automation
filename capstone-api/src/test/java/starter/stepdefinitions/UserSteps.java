@@ -18,6 +18,9 @@ public class UserSteps {
     @Steps
     ManageCourse get;
 
+    @Steps
+    ManageCustomersWhoEnrolled manageCustomersWhoEnrolled;
+
     @Given("user set endpoint for login")
     public void userSetEndpointForLogin() {
         login.userSetEndpointForLogin();
@@ -113,6 +116,11 @@ public class UserSteps {
         get.userSetEndpointForGetCourse();
     }
 
+    @And("login as admin to get token")
+    public void loginAsAdminToGetToken() {
+        get.loginAsAdminToGetToken();
+    }
+
     @When("user send GET HTTP request")
     public void userSendGETHTTPRequest() {
         get.userSendGETHTTPRequest();
@@ -136,5 +144,50 @@ public class UserSteps {
     @When("user send create account with with a password that does not contain number character")
     public void userSendCreateAccountWithWithAPasswordThatDoesNotContainNumberCharacter() {
         register.userSendCreateAccountWithWithAPasswordThatDoesNotContainNumberCharacter();
+    }
+
+    @Given("user set endpoint for get customers who enrolled in the course")
+    public void userSetEndpointForGetCustomersWhoEnrolledInTheCourse() {
+        manageCustomersWhoEnrolled.userSetEndpointForGetCustomersWhoEnrolledInTheCourse();
+    }
+
+    @And("login to get token")
+    public void loginToGetToken() {
+        manageCustomersWhoEnrolled.loginToGetToken();
+    }
+
+    @When("user send GET HTTP request and token for get customers who enrolled in the course")
+    public void userSendGETHTTPRequestAndTokenForGetCustomersWhoEnrolledInTheCourse() {
+        manageCustomersWhoEnrolled.userSendGETHTTPRequestAndTokenForGetCustomersWhoEnrolledInTheCourse();
+    }
+
+    @And("get all customers who enrolled in the course data")
+    public void getAllCustomersWhoEnrolledInTheCourseData() {
+        manageCustomersWhoEnrolled.getAllCustomersWhoEnrolledInTheCourseData();
+    }
+
+    @And("login to get token using normal user")
+    public void loginToGetTokenUsingNormalUser() {
+        manageCustomersWhoEnrolled.loginToGetTokenUsingNormalUser();
+    }
+
+    @When("send GET HTTP request and token user for get customers who enrolled in the course")
+    public void sendGETHTTPRequestAndTokenUserForGetCustomersWhoEnrolledInTheCourse() {
+        manageCustomersWhoEnrolled.sendGETHTTPRequestAndTokenUserForGetCustomersWhoEnrolledInTheCourse();
+    }
+
+    @Then("error status code {int}")
+    public void errorStatusCode(int arg0) {
+        manageCustomersWhoEnrolled.errorStatusCode(401);
+    }
+
+    @And("login as user to get token")
+    public void loginAsUserToGetToken() {
+        get.loginAsUserToGetToken();
+    }
+
+    @When("user send GET HTTP request using normal token")
+    public void userSendGETHTTPRequestUsingNormalToken() {
+        get.userSendGETHTTPRequestUsingNormalToken();
     }
 }

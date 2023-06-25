@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>GET - As a admin I want to see all course</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
+            > <a href="2e03a8900cab42e5b3781c7eb2f1daff441f10335203aacedf4be3d554285154.html">As admin I want to see all course</a>
+        > GET - As a admin I want to see all course
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 12-06-2023 10:47</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fs-2 bi bi-chat-left-quote title-icon"></i>
+                                        <span class="story-header-title">As Admin I Want To See All Course </span>
+                                    </h3>
+
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                    <span class="badge example-tag tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                        <a class="tagLink" style="background:default;"
+                                           href="ec6ab2b18c6664eeb785c3199c05092ad6b5eae916acc6932eb4acc5e6497ed8.html">Manage Course
+                                        </a>
+                                </span>
+                                    <span class="badge example-tag tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                        <a class="tagLink" style="background:default;"
+                                           href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                        </a>
+                                </span>
+                                    <span class='context-icon'><i class='bi bi-windows' title='Windows'></i></span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    GET - As a admin I want to see all course
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+</div>
+</div>
+
+<div class="clr"></div>
+
+
+<div id="beforetable"></div>
+
+
+<div id="tablecontents">
+    <div>
+        <table class="step-table">
+            <tr class="step-titles">
+                <th width="65">
+                </th>
+                <th class="step-description-column greentext">
+                    Steps
+                </th>
+
+                <th width="130" class="greentext">Outcome</th>
+                <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
+            </tr>
+            <tr class="step-table-separator">
+                <td colspan="5"></td>
+            </tr>
+
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                Given user set endpoint for get course
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">342ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                user set endpoint for get course
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="1"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                And login as admin to get token
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">2s 704ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="1-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection1-0 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                login as admin to get token
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">2s 697ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="1-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://skfw.net/api/v1/users/login
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-5">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://skfw.net/api/v1/users/login</p>
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;password&quot;: &quot;Admin@1234&quot;,<br>    &quot;email&quot;: &quot;admin@mail.co&quot;,<br>    &quot;username&quot;: &quot;*&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Server: nginx/1.22.1 (Ubuntu)<br>Date: Mon, 12 Jun 2023 03:48:47 GMT<br>Content-Type: application/json<br>Content-Length: 300<br>Connection: keep-alive<br>Strict-Transport-Security: max-age=31536000; includeSubdomains</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;id&quot;: 1274714313,<br>    &quot;logs&quot;: [<br>        <br>    ],<br>    &quot;status&quot;: &quot;Unknown&quot;,<br>    &quot;message&quot;: &quot;login successful&quot;,<br>    &quot;error&quot;: false,<br>    &quot;data&quot;: {<br>        &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODY2MjgxMjc1ODQsImlhdCI6MTY4NjU0MTcyNzY2MywidWlkIjoiODY5NDc2YWY0Zjk4NDcyZGI3Zjk3YTljZmU1ZGE0NmYifQ.p180gRtWdXaPSmSFbSNQ-J5MircDQouAdn7ci-dpHnU&quot;<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="2"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                When user send GET HTTP request
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">178ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection2" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="2-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection2-0 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                user send GET HTTP request
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">174ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection2-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="2-0-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                user set endpoint for get course
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="2-0-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                GET https://skfw.net/api/v1/admin/courses?size=10&amp;page=1&amp;sort=desc
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-9">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://skfw.net/api/v1/admin/courses?size=10&page=1&sort=desc</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: null</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODY2MjgxMjc1ODQsImlhdCI6MTY4NjU0MTcyNzY2MywidWlkIjoiODY5NDc2YWY0Zjk4NDcyZGI3Zjk3YTljZmU1ZGE0NmYifQ.p180gRtWdXaPSmSFbSNQ-J5MircDQouAdn7ci-dpHnU<br>Accept=*/*</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Server: nginx/1.22.1 (Ubuntu)<br>Date: Mon, 12 Jun 2023 03:48:48 GMT<br>Content-Type: application/json<br>Content-Length: 10822<br>Connection: keep-alive<br>Strict-Transport-Security: max-age=31536000; includeSubdomains</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;id&quot;: 1756582082,<br>    &quot;logs&quot;: [<br>        <br>    ],<br>    &quot;status&quot;: &quot;OK&quot;,<br>    &quot;message&quot;: &quot;catch full course&quot;,<br>    &quot;error&quot;: false,<br>    &quot;data&quot;: [<br>        {<br>            &quot;category_courses&quot;: null,<br>            &quot;checkout&quot;: [<br>                {<br>                    &quot;id&quot;: &quot;5cba58c40a97405eb9f16c130404ec71&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T17:58:31.94446Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:43:23.729271Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;aeb70126ba5e45548f8cfec6acb862b8&quot;,<br>                    &quot;course_id&quot;: &quot;92544e1de084407c8c0764747b8a891e&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;8713d0617abb4d4d9f94c75fc7eec575&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T14:49:11.052584Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:39:10.9053Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;699e70b18e024cc6a7129bc55d2d0425&quot;,<br>                    &quot;course_id&quot;: &quot;92544e1de084407c8c0764747b8a891e&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                }<br>            ],<br>            &quot;create_by&quot;: {<br>                &quot;image&quot;: &quot;&quot;,<br>                &quot;name&quot;: &quot;&quot;,<br>                &quot;username&quot;: &quot;admin&quot;<br>            },<br>            &quot;created_at&quot;: &quot;2023-06-05T12:01:27.99855Z&quot;,<br>            &quot;description&quot;: &quot;test qe&quot;,<br>            &quot;document&quot;: &quot;&quot;,<br>            &quot;finished&quot;: 0,<br>            &quot;id&quot;: &quot;92544e1de084407c8c0764747b8a891e&quot;,<br>            &quot;level&quot;: &quot;test qe&quot;,<br>            &quot;member_count&quot;: 2,<br>            &quot;modules&quot;: [<br>                <br>            ],<br>            &quot;name&quot;: &quot;test qe&quot;,<br>            &quot;price&quot;: 1500,<br>            &quot;rating&quot;: 0,<br>            &quot;thumbnail&quot;: &quot;&quot;,<br>            &quot;update_at&quot;: &quot;2023-06-07T17:58:36.180043Z&quot;,<br>            &quot;video&quot;: &quot;&quot;<br>        },<br>        {<br>            &quot;category_courses&quot;: null,<br>            &quot;checkout&quot;: [<br>                {<br>                    &quot;id&quot;: &quot;c4d06126e9b5476b8d6c9b4288576f1f&quot;,<br>                    &quot;created_at&quot;: &quot;2023-05-22T12:07:37.680278Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-05-22T12:07:37.680278Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;0169faf6d8e44d1a89244712d4002bfb&quot;,<br>                    &quot;course_id&quot;: &quot;25b593e322744df291b4440966431612&quot;,<br>                    &quot;payment_method&quot;: &quot;&quot;,<br>                    &quot;verify&quot;: false<br>                },<br>                {<br>                    &quot;id&quot;: &quot;d8c4942924354745881e498d8c07d46b&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T18:41:45.834198Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:41:50.702787Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;f06ff5ba27e84625aa629561e03e5d0c&quot;,<br>                    &quot;course_id&quot;: &quot;25b593e322744df291b4440966431612&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;1ee93920deae4575bb807751f070a27e&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T17:59:21.319716Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:43:23.729271Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;aeb70126ba5e45548f8cfec6acb862b8&quot;,<br>                    &quot;course_id&quot;: &quot;25b593e322744df291b4440966431612&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;3bb4ead5f5a04fa8a7f253a643e3abd6&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T14:38:31.743344Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-06T14:38:35.571108Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;a7ee88c00ab5428e959d4784cf5567a3&quot;,<br>                    &quot;course_id&quot;: &quot;25b593e322744df291b4440966431612&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;ca3234e54a3447808695aad2199e6dea&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T14:40:53.188382Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:39:10.9053Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;699e70b18e024cc6a7129bc55d2d0425&quot;,<br>                    &quot;course_id&quot;: &quot;25b593e322744df291b4440966431612&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                }<br>            ],<br>            &quot;create_by&quot;: {<br>                &quot;image&quot;: &quot;&quot;,<br>                &quot;name&quot;: &quot;&quot;,<br>                &quot;username&quot;: &quot;admin&quot;<br>            },<br>            &quot;created_at&quot;: &quot;2023-05-22T12:05:37.828015Z&quot;,<br>            &quot;description&quot;: &quot;test&quot;,<br>            &quot;document&quot;: &quot;&quot;,<br>            &quot;finished&quot;: 0,<br>            &quot;id&quot;: &quot;25b593e322744df291b4440966431612&quot;,<br>            &quot;level&quot;: &quot;1&quot;,<br>            &quot;member_count&quot;: 4,<br>            &quot;modules&quot;: [<br>                <br>            ],<br>            &quot;name&quot;: &quot;test&quot;,<br>            &quot;price&quot;: 123,<br>            &quot;rating&quot;: 1,<br>            &quot;thumbnail&quot;: &quot;&quot;,<br>            &quot;update_at&quot;: &quot;2023-06-07T18:41:50.704668Z&quot;,<br>            &quot;video&quot;: &quot;&quot;<br>        },<br>        {<br>            &quot;category_courses&quot;: null,<br>            &quot;checkout&quot;: [<br>                {<br>                    &quot;id&quot;: &quot;97c11647b3c64671b00bdd1f1976ba60&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T18:40:53.42645Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:41:50.702787Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;f06ff5ba27e84625aa629561e03e5d0c&quot;,<br>                    &quot;course_id&quot;: &quot;7387b011ca4e4062a1a1540704d518d3&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;ccdd70b0869c404a81b82dfd42f21eb4&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T18:28:47.047758Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:43:23.729271Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;aeb70126ba5e45548f8cfec6acb862b8&quot;,<br>                    &quot;course_id&quot;: &quot;7387b011ca4e4062a1a1540704d518d3&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;e726b78342aa4d22a32984383d91cd63&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T14:50:12.549659Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:39:10.9053Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;699e70b18e024cc6a7129bc55d2d0425&quot;,<br>                    &quot;course_id&quot;: &quot;7387b011ca4e4062a1a1540704d518d3&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                }<br>            ],<br>            &quot;create_by&quot;: {<br>                &quot;image&quot;: &quot;&quot;,<br>                &quot;name&quot;: &quot;&quot;,<br>                &quot;username&quot;: &quot;admin&quot;<br>            },<br>            &quot;created_at&quot;: &quot;2023-06-05T12:01:01.838183Z&quot;,<br>            &quot;description&quot;: &quot;about life, no care, no love&quot;,<br>            &quot;document&quot;: &quot;&quot;,<br>            &quot;finished&quot;: 0,<br>            &quot;id&quot;: &quot;7387b011ca4e4062a1a1540704d518d3&quot;,<br>            &quot;level&quot;: &quot;beginer&quot;,<br>            &quot;member_count&quot;: 3,<br>            &quot;modules&quot;: [<br>                <br>            ],<br>            &quot;name&quot;: &quot;life second&quot;,<br>            &quot;price&quot;: 500,<br>            &quot;rating&quot;: 0,<br>            &quot;thumbnail&quot;: &quot;https://skfw.net/api/v1/public/image/799fc49.course.thumb.png&quot;,<br>            &quot;update_at&quot;: &quot;2023-06-09T09:29:05.699484Z&quot;,<br>            &quot;video&quot;: &quot;&quot;<br>        },<br>        {<br>            &quot;category_courses&quot;: null,<br>            &quot;checkout&quot;: [<br>                {<br>                    &quot;id&quot;: &quot;48a2bd3437dd4d2cbf1d7936c43fe90d&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T18:00:03.384697Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:43:23.729271Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;aeb70126ba5e45548f8cfec6acb862b8&quot;,<br>                    &quot;course_id&quot;: &quot;496e2aab72fb4a47849c2f7452c62146&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;11270802fc9d431d929f9b387a521bde&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-02T14:38:46.752181Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-06T14:38:35.571108Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;a7ee88c00ab5428e959d4784cf5567a3&quot;,<br>                    &quot;course_id&quot;: &quot;496e2aab72fb4a47849c2f7452c62146&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;4a7324f2d2a34b0a84b09fc59c56684d&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T14:51:13.577183Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:39:10.9053Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;699e70b18e024cc6a7129bc55d2d0425&quot;,<br>                    &quot;course_id&quot;: &quot;496e2aab72fb4a47849c2f7452c62146&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                }<br>            ],<br>            &quot;create_by&quot;: {<br>                &quot;image&quot;: &quot;&quot;,<br>                &quot;name&quot;: &quot;&quot;,<br>                &quot;username&quot;: &quot;admin&quot;<br>            },<br>            &quot;created_at&quot;: &quot;2023-06-02T14:11:31.669239Z&quot;,<br>            &quot;description&quot;: &quot;Kelas UI design (User Interface design) adalah kelas yang bertujuan untuk mengajarkan kepada peserta bagaimana merancang tampilan antarmuka yang mudah digunakan dan menarik bagi pengguna. UI design merupakan bagian dari disiplin desain yang fokus pada aspek visual dan interaktif dari sebuah produk digital, seperti website, aplikasi, dan perangkat lunak.&quot;,<br>            &quot;document&quot;: &quot;&quot;,<br>            &quot;finished&quot;: 0,<br>            &quot;id&quot;: &quot;496e2aab72fb4a47849c2f7452c62146&quot;,<br>            &quot;level&quot;: &quot;beginer&quot;,<br>            &quot;member_count&quot;: 2,<br>            &quot;modules&quot;: [<br>                <br>            ],<br>            &quot;name&quot;: &quot;UI Design&quot;,<br>            &quot;price&quot;: 300000,<br>            &quot;rating&quot;: 0,<br>            &quot;thumbnail&quot;: &quot;https://skfw.net/api/v1/public/image/c14c6a8.course.thumb.png&quot;,<br>            &quot;update_at&quot;: &quot;2023-06-09T09:29:53.169358Z&quot;,<br>            &quot;video&quot;: &quot;&quot;<br>        },<br>        {<br>            &quot;category_courses&quot;: null,<br>            &quot;checkout&quot;: [<br>                {<br>                    &quot;id&quot;: &quot;8d0a78c10ee04f7a8984bbe3fa181d0d&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-02T14:41:31.042286Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-02T15:01:10.554434Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;a6f0f3ffa7e74b1ba3db051c9974363e&quot;,<br>                    &quot;course_id&quot;: &quot;98faa25ee34a41519247ebbc2e556c58&quot;,<br>                    &quot;payment_method&quot;: &quot;&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;2e29394487d44602b2329b3bf853b533&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-07T17:59:36.367217Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:43:23.729271Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;aeb70126ba5e45548f8cfec6acb862b8&quot;,<br>                    &quot;course_id&quot;: &quot;98faa25ee34a41519247ebbc2e556c58&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;cd4ae6a0fcde45d2a654a12490ecacb8&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T07:55:50.710061Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-06T14:38:35.571108Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;a7ee88c00ab5428e959d4784cf5567a3&quot;,<br>                    &quot;course_id&quot;: &quot;98faa25ee34a41519247ebbc2e556c58&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                },<br>                {<br>                    &quot;id&quot;: &quot;8ceaa8fdd6d94092945e46a19cd5a7e0&quot;,<br>                    &quot;created_at&quot;: &quot;2023-06-06T14:54:18.028766Z&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-07T18:39:10.9053Z&quot;,<br>                    &quot;deleted_at&quot;: null,<br>                    &quot;user_id&quot;: &quot;699e70b18e024cc6a7129bc55d2d0425&quot;,<br>                    &quot;course_id&quot;: &quot;98faa25ee34a41519247ebbc2e556c58&quot;,<br>                    &quot;payment_method&quot;: &quot;nop&quot;,<br>                    &quot;verify&quot;: true<br>                }<br>            ],<br>            &quot;create_by&quot;: {<br>                &quot;image&quot;: &quot;&quot;,<br>                &quot;name&quot;: &quot;&quot;,<br>                &quot;username&quot;: &quot;admin&quot;<br>            },<br>            &quot;created_at&quot;: &quot;2023-06-02T12:54:49.834686Z&quot;,<br>            &quot;description&quot;: &quot;Quality Assurance (QA) refers to the systematic processes, activities, and measures undertaken to ensure that a product or service meets or exceeds the specified requirements and expectations. It is a critical component of the overall quality management system within an organization.&quot;,<br>            &quot;document&quot;: &quot;&quot;,<br>            &quot;finished&quot;: 0,<br>            &quot;id&quot;: &quot;98faa25ee34a41519247ebbc2e556c58&quot;,<br>            &quot;level&quot;: &quot;Intermediate&quot;,<br>            &quot;member_count&quot;: 3,<br>            &quot;modules&quot;: [<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-02T13:03:52.698969Z&quot;,<br>                    &quot;description&quot;: &quot;Web application testing refers to the process of assessing and evaluating the functionality, usability, security, and performance of a web application. It involves testing the various components and features of a web application to ensure that it works as intended and meets the specified requirements.&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;dd29a3aea12d45eb9ab5da5ac078d02e&quot;,<br>                    &quot;name&quot;: &quot;Web Application Testing&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:28:15.917008Z&quot;,<br>                    &quot;video&quot;: &quot;https://www.youtube.com/watch?v=-5QcjRUIDGM&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-02T13:04:47.033865Z&quot;,<br>                    &quot;description&quot;: &quot;Opening defects in a test management tool refers to the process of logging and documenting identified issues or defects during the testing phase of a software project. Test management tools provide a centralized platform where testers can record and track defects encountered during testing, making it easier to manage and resolve them efficiently.&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;4ee35416f8574fbf9f7b1ff4988cecee&quot;,<br>                    &quot;name&quot;: &quot;Opening Defects in Test Management Tool&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-02T13:04:47.033865Z&quot;,<br>                    &quot;video&quot;: &quot;&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-02T13:05:17.082276Z&quot;,<br>                    &quot;description&quot;: &quot;Software testing is the process of evaluating a software application or system to assess its quality, functionality, and performance. It involves conducting various activities to identify defects, errors, or inconsistencies in the software and ensuring that it meets the specified requirements and expectations.&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;ee81fe9badd441b882fad091853619ed&quot;,<br>                    &quot;name&quot;: &quot;Software Testing&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:23:40.212107Z&quot;,<br>                    &quot;video&quot;: &quot;https://www.youtube.com/watch?v=_3OhZrad8RM&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-02T13:06:00.817059Z&quot;,<br>                    &quot;description&quot;: &quot;Creating test cases is an integral part of the software testing process. Test cases are detailed and structured sets of inputs, conditions, and expected outcomes that are designed to verify the functionality, behavior, and performance of a software application.&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;a5ed3c38b23945c8ad72c8e345f10f79&quot;,<br>                    &quot;name&quot;: &quot;Creating Test Cases&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:21:45.858711Z&quot;,<br>                    &quot;video&quot;: &quot;https://www.youtube.com/watch?v=g0PrXoWKM2Y&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-11T04:29:35.141266Z&quot;,<br>                    &quot;description&quot;: &quot;TESTING 1&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;b32448537d6b4295ad8af2c16c74a7f1&quot;,<br>                    &quot;name&quot;: &quot;Test Case - 1&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:29:35.141266Z&quot;,<br>                    &quot;video&quot;: &quot;&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-11T04:29:41.391889Z&quot;,<br>                    &quot;description&quot;: &quot;TESTING 2&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;50c5895959374f529f8603baaf81a9bd&quot;,<br>                    &quot;name&quot;: &quot;Test Case - 2&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:29:41.391889Z&quot;,<br>                    &quot;video&quot;: &quot;&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-11T04:29:43.955347Z&quot;,<br>                    &quot;description&quot;: &quot;TESTING 3&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;1c5e688b01cf4bf08a916861f430b9f0&quot;,<br>                    &quot;name&quot;: &quot;Test Case - 3&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:29:43.955347Z&quot;,<br>                    &quot;video&quot;: &quot;&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-11T04:29:48.664346Z&quot;,<br>                    &quot;description&quot;: &quot;TESTING 4&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;efb353977fe04052b044f00f2f8d737f&quot;,<br>                    &quot;name&quot;: &quot;Test Case - 4&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:29:48.664346Z&quot;,<br>                    &quot;video&quot;: &quot;&quot;<br>                },<br>                {<br>                    &quot;created_at&quot;: &quot;2023-06-11T04:29:51.397645Z&quot;,<br>                    &quot;description&quot;: &quot;TESTING 5&quot;,<br>                    &quot;document&quot;: &quot;&quot;,<br>                    &quot;id&quot;: &quot;206b6e9dc62141a09832d9fce54ec480&quot;,<br>                    &quot;name&quot;: &quot;Test Case - 5&quot;,<br>                    &quot;thumbnail&quot;: &quot;&quot;,<br>                    &quot;updated_at&quot;: &quot;2023-06-11T04:29:51.397645Z&quot;,<br>                    &quot;video&quot;: &quot;&quot;<br>                }<br>            ],<br>            &quot;name&quot;: &quot;Quality Assurance&quot;,<br>            &quot;price&quot;: 200000,<br>            &quot;rating&quot;: 0,<br>            &quot;thumbnail&quot;: &quot;https://skfw.net/api/v1/public/image/62b5c3a.course.thumb.png&quot;,<br>            &quot;update_at&quot;: &quot;2023-06-09T09:30:33.15151Z&quot;,<br>            &quot;video&quot;: &quot;&quot;<br>        }<br>    ]<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="3"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection3 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                Then user see status code 200
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">022ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection3" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="3-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                user see status code 200
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">018ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="4"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection4 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                And get all course show up
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">046ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection4" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="4-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                get all course show up
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">043ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+            <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                <td width="100"><span class="top-level-step"><em>3.41s</em></span></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="beforefooter"></div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 3.6.21</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var $icon = $(".img" + divId);
+        $icon.toggleClass("bi-caret-right-square");
+        $icon.toggleClass("bi-caret-down-square");
+    }
+</script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(document).ready(function () {
+        $('img.screenshot').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    });
+
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</div>
+</body>
+</html>
